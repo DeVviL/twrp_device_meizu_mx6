@@ -15,27 +15,27 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := nikel
+PRODUCT_RELEASE_NAME := mx6
 
 #$(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/xiaomi/nikel/device_nikel.mk)
+$(call inherit-product, device/meizu/mx6/device_mx6.mk)
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := nikel
-PRODUCT_NAME := cm_nikel
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 4
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := mx6
+PRODUCT_NAME := omni_mx6
+PRODUCT_BRAND := Meizu
+PRODUCT_MODEL := MX6
+PRODUCT_MANUFACTURER := Meizu
 
-COFFACE_PRODUCT_DEVICE := nikel
-COFFACE_BUILD_PRODUCT := nikel
-COFFACE_PRODUCT_NAME := nikel
+COFFACE_PRODUCT_DEVICE := mx6
+COFFACE_BUILD_PRODUCT := mx6
+COFFACE_PRODUCT_NAME := mx6
